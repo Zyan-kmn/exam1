@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$("button").click(function(){
+  		let r1 = parseInt($('#Wins').val());
+  		let r2 = parseInt($('#Draws').val());
+  		let r3 = parseInt($('#Losses').val());
+  		let result1= r1*3;
+  		let result2= r2;
+  		let result3= r3*0;
+  		let finalresult=result1+result2+result3;
+  		$('#result').val(finalresult);
+  		})
+  	});
+  </script>
+</head>
+<body>
+	<h1>Result For Point</h1>
+	Wins<input type="number"  id="Wins">
+	Draws<input type="number"  id="Draws">
+	Losses<input type="number" id="Losses"><br><br><br>
+	<button>Look Result</button>
+	Total Point<input type="number" id="result">
+</body>
+</html>

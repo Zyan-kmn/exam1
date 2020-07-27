@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+        <title>How to show txtarea value in alert box</title> 
+
+    </head> 
+    <body> 
+        <center> 
+            <h1>Type Something</h1> 
+            <textarea id="txtArea"></textarea><br><br> 
+            <button id="btn" style="background-color: yellow">Look Your Input</button> 
+        </center> 
+    </body> 
+  <script type="text/javascript" src="jquery.min.js"></script>
+
+    <script> 
+        $(document).ready(function () { 
+            
+           
+            $("#btn").click(function () { 
+                var text = $("#txtArea").val(); 
+                alert(text); 
+            }); 
+        }); 
+    </script> 
+</html> 
